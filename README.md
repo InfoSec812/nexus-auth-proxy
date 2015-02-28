@@ -1,7 +1,7 @@
 Sonatype Nexus Token Authentication Proxy
 =========================================
 
-# Purpose
+## Purpose
 
 To provide token authentication capabilities to Sonatype Nexus OSS
 by using the Remote User Token headers available in Nexus
@@ -14,24 +14,24 @@ which allows for the management of the user tokens. That web application uses
 an authentication request to the Nexus server's REST API to authenticate
 the user.
 
-# Prerequisites
+## Prerequisites
 * Java JDK >= 1.7
 * Maven >= 3.0
 * Internet Access (to download dependencies)
 
-# Building
+## Building
 
 ```bash
 mvn clean package
 ```
 
-# Running (In Development)
+## Running (In Development)
 
 ```bash
 mvn exec:java -Dexec.args="--listen 127.0.0.1 --listen-port 8080 --target 127.0.0.1 --target-port 8980"
 ```
 
-# Configuration
+## Configuration
 
 Running the application with the argument "--config /path/to/config.json" will 
 allow the user to load the configuration options from a JSON formatted config
