@@ -6,7 +6,7 @@ Sonatype Nexus Token Authentication Proxy
 To provide token authentication capabilities to Sonatype Nexus OSS
 by using the Remote User Token headers available in Nexus
 
-# Operation
+## Operation
 This application maintains an embedded HSQLDB database of user<->token mappings
 which when properly verified will set the REMOTE_USER header for requests 
 proxied to the Nexus server. This application also provides a web application
