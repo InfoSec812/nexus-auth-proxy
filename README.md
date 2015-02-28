@@ -28,7 +28,7 @@ mvn clean package
 ## Running (In Development)
 
 ```bash
-mvn exec:java -Dexec.args="--listen 127.0.0.1 --listen-port 8080 --target 127.0.0.1 --target-port 8980"
+mvn exec:java -Dexec.args="--proxy-host 127.0.0.1 --proxy-port 8080 --target-host 127.0.0.1 --target-port 8980"
 ```
 
 ## Configuration
